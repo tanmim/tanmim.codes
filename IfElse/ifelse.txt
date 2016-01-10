@@ -1,1 +1,7 @@
-this is a ifelse test
+input:	output:
+1 	saturday
+3	monday
+0	friday
+8	saturday
+13	thursday
+23	sunday
