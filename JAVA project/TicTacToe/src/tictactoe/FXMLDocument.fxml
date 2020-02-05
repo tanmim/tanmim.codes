@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.FXMLDocumentController">
+   
+   <top>
+
+      <MenuBar BorderPane.alignment="CENTER">
+
+        <menus>
+
+          <Menu onAction="#menuClickHandler" text="options">
+
+            <items>
+
+              <MenuItem onAction="#menuClickHandler" text="Again Play" />
+
+            </items>
+
+          </Menu>
+
+        </menus>
+
+      </MenuBar>
+ 
+   </top>
+
+   <center>
+
+      <GridPane BorderPane.alignment="CENTER">
+            
+            
+         <children>
+          <GridPane fx:id="gameBoard" GridPane.rowIndex="1">
+              <children>
+          <Button fx:id="b1" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color:#19356c ; -fx-border-width: 5px; -fx-border-color:#3667c9;  -fx-font-size:40px;" textFill="POWDERBLUE" GridPane.rowIndex="4" />
+
+          <Button fx:id="b2" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #19356c ; -fx-border-width: 5px; -fx-border-color:#3667c9;  -fx-font-size:40px;" textFill="POWDERBLUE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+          <Button fx:id="b3" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #19356c ; -fx-border-width: 5px; -fx-border-color:#3667c9;  -fx-font-size:40px;" textFill="POWDERBLUE" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+          <Button fx:id="b4" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #19356c ; -fx-border-width: 5px; -fx-border-color:#3667c9;  -fx-font-size:40px;" textFill="POWDERBLUE" GridPane.rowIndex="5" />
+
+          <Button fx:id="b5" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #19356c ; -fx-border-width: 5px; -fx-border-color:#3667c9;  -fx-font-size:40px;" textFill="POWDERBLUE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+          <Button fx:id="b6" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #19356c ; -fx-border-width: 5px; -fx-border-color:#3667c9;  -fx-font-size:40px;" textFill="POWDERBLUE" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+
+          <Button fx:id="b7" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #19356c ; -fx-border-width: 5px; -fx-border-color:#3667c9;  -fx-font-size:40px;" textFill="POWDERBLUE" GridPane.rowIndex="6" />
+
+          <Button fx:id="b8" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #19356c ; -fx-border-width: 5px; -fx-border-color:#3667c9;  -fx-font-size:40px;" textFill="POWDERBLUE" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+          <Button fx:id="b9" onAction="#buttonClickHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #19356c ; -fx-border-width: 5px; -fx-border-color:#3667c9; -fx-font-size:40px;" textFill="POWDERBLUE" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+          </children>
+           <columnConstraints>
+            <ColumnConstraints />
+           <ColumnConstraints />
+           <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+            
+         </rowConstraints>
+          </GridPane>  
+          <GridPane GridPane.rowIndex="0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="43.0" prefWidth="296.0" text="           TicTacToe" textAlignment="CENTER" textFill="DARKRED" wrapText="true">
+                     <font>
+                        <Font size="29.0" />
+                     </font></Label>
+               </children>
+            </GridPane>
+           
+
+         </children>
+         <columnConstraints>
+            <ColumnConstraints />
+           
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            
+         </rowConstraints>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+
+      </GridPane>
+
+   </center>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+   <bottom>
+      <Label fx:id="lbl" prefHeight="17.0" prefWidth="302.0" text="First Player's Turn (' X ') " textFill="#970b0b" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </bottom>
+
+</BorderPane>
